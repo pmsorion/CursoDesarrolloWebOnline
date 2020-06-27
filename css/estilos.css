@@ -1,0 +1,54 @@
+/*reglas
+selectores
+declaraciones
+propiedades
+valores*/
+
+/*Selector de etiqueta header - section - article - nav*/
+
+/* header {
+    background: rgb(0, 128, 122);
+    color: red;
+} */
+
+/*selector descendente*/
+/* body header div nav ol li a  */
+
+/* selector de clase . */
+/* .link  */
+
+
+/* selector de #id */
+/* #portafolio */
+
+body {
+    font-family: 'Source Sans Prop', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 35px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+}
+
+.project-details {
+    width: 500px;
+}
+
+.project-imageContainer {
+    width: 500px;
+}
+
+.hero {
+    height: 300px;
+}
