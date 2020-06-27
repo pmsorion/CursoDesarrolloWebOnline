@@ -4,66 +4,75 @@
         <meta charset="UTF-8">
         <title>integraMente</title>
         <link rel="icon" type="image/png" href="images/Icojam-Onebit-Puzzle.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/estilos.css">
     </head>
     <body>
-        <header>
+        <header class="header">
             <div>
-                <figure>
+                <figure class="logo">
                     <img src="images/integramente5.png" alt="Logo de http://integramente.org">
                 </figure>
-                <nav>
+                <nav class="menu">
                     <ol>
                         <li>
-                            <a href="#">Portafolio</a>
+                            <a class="link" href="#portafolio">Portafolio</a>
                         </li>
                         <li>
-                            <a href="#">Experiencia</a>
+                            <a class="link" href="#eventos">Experiencia</a>
                         </li>
                         <li>
-                            <a href="#">Tabajemos Juntos</a>
+                            <a class="link" href="#contacto">Tabajemos Juntos</a>
                         </li>
                     </ol>
                 </nav>
             </div>
         </header>
-        <section>
+        <section class="hero">
             <h1>
                 Hola! somos <strong>integraMente</strong> <br> un grupo de apoyo educativo <strong>interdisciplinario</strong> <br> neuropsicológico  <strong>en Colombia</strong>
             </h1>
             <img src="images/integramente2.PNG" width="500" height="300" alt="Imagen principal del sitio">
         </section>
-        <section>
+        <section id="portafolio" class="portfolio">
             <h2>Portafolio (Proyectos Destacados)</h2>
-            <article>
-                <h3>Proyecto integraMente</h3>
-                <h6>Somos especialistas. En educación y orientación familiar</h6>
-                <p><small><strong>Fecha:</strong> 26/06/2020</small></p>
-                <p><small><strong>Puedes verlo en:</strong> integramente.org</small></p>
-                <p>Nuestra pasión es la educación transformadora, creemos que cada niño y niña en Colombia <br>
+            <article class="project">
+                <h3 class="project-title">Proyecto integraMente</h3>
+                <h6 class="project-course">Somos especialistas. En educación y orientación familiar</h6>
+                <p class="project-date"><small><strong>Fecha:</strong> 26/06/2020</small></p>
+                <p class="project-url"><small><strong>Puedes verlo en:</strong> integramente.org</small></p>
+                <p class="project-description">Nuestra pasión es la educación transformadora, creemos que cada niño y niña en Colombia <br>
                     tiene un ritmo de aprendizaje que lo lleva a desollar habilidades. Como profesionales en <br>
                     Educación y Psicología queremos potencializar estas habilidades para que sean niños, niñas y <br>
                     familias felices.</p>
-                <img src="images/panoramica integraMente.jpeg" width="500" alt="Proyecto integraMente">
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="images/panoramica integraMente.jpeg" width="500" alt="Proyecto integraMente">
+                </figure>
             </article>
         </section>
-        <section>
+        <section id="eventos">
             <h2>Más sobre nuestra experiencia</h2>
-            <article>
-                <figure>
-                    <img src="images/integramente3.PNG" width="500" >
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/SanPedrodeJagua.jpeg" width="500" alt="Proyecto San Pedro de Jagua">
                 </figure>
-                <h3>Proyecto Colegio San Pedro de Jagua (Ubala Julio 2020)</h3>
-                <p>Este es nuestro primer año Juntos, por eso decidimos unir experiencias profesionales que nos <br>
+                <h3 class="event-title">Proyecto Colegio San Pedro de Jagua (Ubala Julio 2020)</h3>
+                <p class="event-description">Este es nuestro primer año Juntos, por eso decidimos unir experiencias profesionales que nos <br>
                     han mostrado que padres, niños y niñas necesitan de elementos diferentes para desarrollar sus <br>
                     habilidades, todos juntos en pro de una educación más asertiva.</p>
                     
-                <p>Esta es una empresa de trabajo colaborativo, es decir hacemos equipo con instituciones <br>
+                <p class="event-description">Esta es una empresa de trabajo colaborativo, es decir hacemos equipo con instituciones <br>
                     educativas, padres de familia o acudientes evitando la deserción escolar en Colombia.</p>
-                <a>Ver Comentarios</a>
-                <img src="images/SanPedrodeJagua.jpeg" width="500" alt="Proyecto San Pedro de Jagua">
+                <a class="event-url" href="https://www.youtube.com/watch?v=II8dr6epx3U" target="_blank">Ver eventos</a>
             </article>
         </section>
-        <section>Seccion Contacto</section>
-        <footer>footer</footer>
+        <section id="contacto" class="contact">
+            <form class="form-email" action="/suscripcion/">
+                <h3>¿Creamos algo juntos?</h3>
+                <input type="email" placeholder="Déjanos tu eMail" id="email">
+                <button>Enviar</button>
+            </form>
+        </section>
+        <footer class="footer">footer</footer>
     </body>
 </html>
