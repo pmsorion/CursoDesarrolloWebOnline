@@ -46,7 +46,7 @@ h1 {
     line-height: 1.5;
     letter-spacing: -.2px;
     color: white;
-    margin: 100px 150px 70px 30px;
+    margin: 0px;
 }
 
 h1 strong {
@@ -100,9 +100,25 @@ h1 strong {
 .header {
     background-color: #1b2127;
     color: white;
+    margin: 0px;
 }
 
 .header a {
     color: white;
     text-decoration: none;
+    margin: 0px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    margin: 5px;
+    flex-shrink: 0;
 }
